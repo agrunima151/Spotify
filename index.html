@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" id="home" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="">Home</a>
+                </div>
+                <div class="nav-option" id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="box1">
+                    <div class="lib-option nav-option">
+                        <img src="library_icon.png" alt="library">
+                        <a href="">Your Library</a>
+                    </div>
+                    <div class="lib-icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>    
+                </div>
+                <div class="box2">
+                    <p class="box2-1">Create your first playlist</p>
+                    <p class="box2-2">It's esay ,we'll help you</p> 
+                    <button class="badge">Create playlist</button>
+                </div>
+                <div class="box3">
+                    <p class="box3-1">Let's find some podcast to follow</p>
+                    <p class="box3-2">We'll keep you updated on new episodes</p> 
+                    <button class="badge">Browse podcast</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="part1nav">
+                    <img src="backward_icon.png">
+                    <img src="forward_icon.png" class="hide">
+                </div>
+                <div class="part2nav">
+                    <button class="badge rgt hide">Explore Premiun</button>
+                    <button class="badge rgt darkbad">
+                    <i class="fa-regular fa-circle-down" style="margin-right:0.2rem;"></i>Install App</button>
+                    <i class="fa-solid fa-user rgt"></i>
+                </div>
+            </div>
+                <h2>Recently played</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="card1img.jpeg" class="cards-img">
+                        <p class="title">Top 50 Global</p>
+                        <p class="info">Your daily updates of most played tracks....</p>
+                    </div>
+                </div>
+                <h2>Trending now near you</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="card2img.jpg" class="cards-img">
+                        <p class="title">Die With A Smile</p>
+                        <p class="info">By Lady Gaga & Bruno Mars</p>
+                    </div>
+                    <div class="card">
+                        <img src="card3img.jpg" class="cards-img">
+                        <p class="title">Espresso</p>
+                        <p class="info">By Sabrina Carpenter</p>
+                    </div>
+                    <div class="card">
+                        <img src="card4img.jpg" class="cards-img">
+                        <p class="title">We Don't Talk Anymore</p>
+                        <p class="info">By Charlie Puth & Selena Gomez</p>
+                    </div>
+                    <div class="card">
+                        <img src="card5img.jpeg" class="cards-img">
+                        <p class="title">Top 50 Global</p>
+                        <p class="info">Your weekly updates of most played tracks....</p>
+                    </div>
+                    <div class="card">
+                        <img src="card6img.jpeg" class="cards-img">
+                        <p class="title">Top 50 India</p>
+                        <p class="info">Your daily updates of most played tracks all over India....</p>
+                    </div>
+                </div>
+                <h2>Featured Podcasts</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="card7img.jpeg" class="cards-img">
+                        <p class="title">Stuff You Should Known</p>
+                        <p class="info">Hosted by Josh Clark and Charles W. Bryant</p>
+                        <p class="category">Educational</p>
+                    </div>
+                    <div class="card">
+                        <img src="card8img.jpeg" class="cards-img">
+                        <p class="title">Are You Garbage?</p>
+                        <p class="info">Hosted by Kevin Ryan and H.Foley</p>
+                        <p class="category">Comedy</p>
+                    </div>
+                    <div class="card">
+                        <img src="card9img.jpeg" class="cards-img">
+                        <p class="title">The Last Laugh</p>
+                        <p class="info">Hosted by Matt Wilstein</p>
+                        <p class="category">Comedy</p>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="line"></div>
+                </div>
+        </div>
+        <div class="music-player">
+            <div class="current-play">
+                <div class="current-player-1">
+                    <img src="card2img.jpg" class="play">
+                    <p class="current-song">Die With A Smile <br>
+                    by  Lady Gaga & Bruno Mars
+                    </p>
+                </div>
+                <div class="current-player-2">
+                    <i class="fa-regular fa-heart" style="margin-right: 0.5rem;"></i>
+                    <i class="fa-solid fa-computer" ></i>
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-control">
+                    <img src="player_icon1.png" class="player-control-icon">
+                    <img src="player_icon2.png" class="player-control-icon">
+                    <img src="player_icon3_pause.png.png" class="player-control-icon" style="height: 2rem; opacity: 1;">
+                    <img src="player_icon4.png" class="player-control-icon">
+                    <img src="player_icon5.png" class="player-control-icon">
+                </div>
+                <div class="player-bar">
+                    <span class="current-time">0:00</span>
+                    <input type="range" min="0" max="100" class="progress" step="1">
+                    <span class="total-time">3:33</span>
+                </div>
+            </div>
+            <div class="controls">
+                <i class="fa-brands fa-square-youtube"></i>
+                <i class="fa-regular fa-clipboard"></i>
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-computer"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <input type="range" min="0" max="100" step="1" class="volumn" style="border-radius: 100px;">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
