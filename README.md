@@ -33,6 +33,9 @@
     <p>We welcome contributions! Fork the repository, submit issues, or send pull requests with improvements.</p>
     <h2>License 📜</h2>
     <p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
+    <footer>
+    &copy; 2024 Arunima Gupta | <a href="https://github.com/agrunima151/Spotify" target="_blank">&#128279; GitHub Repository</a>
+    </footer>
 
 </body>
 </html>
